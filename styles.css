@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: myFont;
+  src: url('font/heading-font.otf');
+}
+@font-face {
+  font-family: myFont1;
+  src: url('font/Audrey-Medium.otf');
+}
+
+:root{
+  --primary-color: #e6c9a2;
+  --primary-color-dark: #dbb88b;
+  --primary-color-light: #f1e5d6;;
+  --secondary-color:#0e1927; 
+
+  --p-font-size: 16px;
+}
+
+body{
+  font-family: "Playfair Display", serif; 
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+div{
+  overflow: hidden;
+}
+
+section{
+  margin-bottom: 150px;
+}
+
+.logo{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img{
+  height: 100%;
+}
+
+.row{
+  height: 100%;
+}
+/************Navbar********/
+.navbar{
+  margin: 0 30px;
+}
+
+.container-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: .1px solid rgba(0, 0, 0, 0.178);
+  max-height: 200px;
+  
+}
+
+.nav-info{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-info h6, .nav-info p{
+  margin: 0;
+}
+
+.container-nav i{
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  border: 1px solid var(--primary-color);
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/************Hero***************/
+.hero{
+  background: linear-gradient(to right, #0000007e, #0000007e), url('img/restaurante-hero1.jpg');
+  color: white;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero div{
+  width: 50%;
+}
+
+.hero h1{
+
+  font-weight: 500;
+  font-size: 70px;
+}
+
+
+/*******Texto******/
+h1{
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: myFont1;
+  letter-spacing: 10px;
+}
+
+h2{
+  font-family: myFont1;
+}
+
+a, .nav-link{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.sec-name{
+  color: var(--primary-color);
+  margin: 0 5px;
+}
+
+p{
+  font-weight: 300;
+  font-size: var(--p-font-size);
+}
+
+h5{
+  font-weight: 600;
+}
+
+h6{
+  font-weight: 300;
+}
+
+/************button***************/
+.btn{
+  border: none;
+  background-color: var(--primary-color);
+  width: 170px;
+  height: 50px;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.btn2{
+  border: 1px solid var(--secondary-color);
+  background-color: transparent;
+  width: 180px;
+  height: 50px;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all .3s;
+  font-size: 16px;
+}
+
+.btn3{
+  background-color: transparent;
+  border: var(--primary-color) 1px solid;
+  color: white;
+}
+
+
+.btn:hover{
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.btn2:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color-dark);
+}
+
+.btn3:hover{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/************Form************/
+
+form{
+  background-color: var(--secondary-color);
+  padding: 50px 50px;
+  color: white;
+  width: 100%;
+}
+
+form h2{
+  color: var(--primary-color);
+}
+
+form input{
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: transparent;
+  color: white;
+  border: solid 1px var(--primary-color);
+  padding: 10px;
+}
+
+::placeholder{
+  color: white;
+  font-weight: 300;
+}
+::-ms-value{
+  color: white;
+}
+
+.horario{
+  background:linear-gradient(to right, rgba(var(--bs-tertiary-bg-rgb)),  transparent), url('img/horario-img.jpg');
+  padding: 180px 0px;
+}
+
+
+/********************About**************/
+.about{
+  position: relative;
+  margin-bottom: 150px;
+  margin-top: 100px;
+}
+
+.about .container{  
+  display: flex;
+}
+
+.about .shape{
+  position: absolute;
+  width: 40%;
+  height: 80%;
+  background-color: var(--primary-color-light);
+  z-index: -1;
+}
+
+.about h5{
+  font-weight: 600;
+}
+
+.about .col-7{
+  padding: 10px 80px;
+}
+
+.about .btn2{
+    font-weight: 500;
+}
+
+.about .img-fluid{
+  max-height: 100%;
+}
+
+
+/*************Horario**********/
+
+ul{
+  font-size: var(--p-font-size);
+  list-style: none;
+  font-weight: 500;
+  padding: 0;
+}
+
+.bold{
+  font-weight: 600;
+}
+
+/************Why Us******************/
+.whyUs{
+  background-color: var(--primary-color-light);
+  width: 100%;
+  min-height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.whyUs .container{
+  position: relative;
+  top: 100px;
+  margin-bottom: 130px;
+}
+
+.whyUs h5{
+  font-weight: 600;
+}
+
+.whyUs p{
+  width: 50%;
+  margin: auto;
+}
+
+.whyUs-img{
+  display: flex;
+  max-width: 100%;
+}
+
+.whyUs-food{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: -30px;
+}
+
+.whyUs-food img{
+  width: 350px;
+  object-fit: cover;
+}
+
+/***********Menu************/
+.menu .row{
+  display: flex;
+  gap: 15px;
+}
+
+.type-food{
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 10px 0;
+  padding-bottom: 30px;
+  cursor: pointer;
+}
+
+.menu h2{
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.menu .h2{
+  color: var(--primary-color);
+  font-weight: 300;
+  font-size: 30px;
+}
+
+
+.menu-list{
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.menu-list h5 {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 1.3px;
+  position: relative;
+  margin-bottom: 1px;
+}
+
+.menu-list h5::before, .menu-list h5::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #e6c9a2;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  z-index: -1;
+}
+
+.menu-list h5::after {
+  bottom: 8px;
+}
+
+.food-name, .price{
+  background-color: white;
+}
+
+.type-food #entrante{
+  color: var(--primary-color);
+}
+
+#entrantes{
+  display: flex;
+}
+
+/************Blog************/
+.blog a{
+  color: var(--secondary-color);
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.blog p{
+  color: grey;
+}
+
+
+/*************ubicacion********************/
+.ubicacion .row{
+  gap: 20px;
+}
+
+.ubicacion h1{
+  font-size: 30px;
+}
+
+.location{
+  height: 400px;
+  width: 400px;
+  background: url('img/plato-de-comida2.webp');
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+  margin: auto;
+  border: var(--primary-color) 3px solid;
+  border-radius: 50%;
+  position: relative;
+}
+
+.ubicacion .col{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+}
+
+.col iframe{
+  width: 100%;
+}
+
+/**********Footer*************/
+
+footer{
+  background-color: var(--secondary-color);
+  color: white;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+footer .row{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+footer .col{
+  max-width: 400px;
+  overflow: hidden;
+}
+
+footer .socials{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer .socials a{
+  border: var(--primary-color) 2px solid;
+  padding: 10px;
+  color: white;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer li{
+  font-weight: 400
+}
+
+footer h2{
+  border-bottom: 1px solid var(--primary-color);
+  width: 35px;
+}
+
+footer h6{
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+footer p{
+  margin-left: 10px;
+}
+
+.fin{
+  border-top: .5px solid var(--primary-color);
+}
+
+.copyright{
+  color: var(--primary-color);
+}
+
+@media (max-width: 1363px){
+  .whyUs-food img{
+    display: none;
+  }
+
+  .ubicacion .col{
+    width: 45%;
+    flex: auto;
+  }
+}
+
+@media (max-width: 1183px){
+  .hero div{
+    width: 100%;
+  }
+
+  .img-why-us1, .img-why-us3{
+    display: none;
+  }
+}
+
+@media (max-width: 994px){
+  .menu .col{
+    width: 45%;
+    flex: auto;
+    margin-bottom: 20px;
+  }
+
+  .location{
+    width: 300px;
+    height: 300px;
+  }
+
+  .ubicacion h1{
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 979px){
+  h1{
+    font-size: 35px;
+  }
+
+  .about .col-7 {
+    padding: 10px 10px;
+}
+}
+
+@media (max-width: 775px){
+  .about .col-7, .about .col-5{
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-weight: 500;
+    font-size: 50px;
+  }
+
+  .whyUs p {
+    width: 90%;
+  } 
+
+  .horario .col-6{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .horario .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-nav .nav-info div{
+    display: none;
+  }
+
+  .container-nav .nav-info .i{
+    display: block;
+  }
+
+  .menu .col{
+    width: 100%;
+    padding: 10px 50px;
+  }
+
+  .blog .col{
+    width: 45%;
+    flex: auto;
+    margin-bottom: 20px;
+  }
+
+  .ubicacion .col-loc{
+    display: none;
+  }
+
+  .ubicacion .col{
+    width: 80%;
+  }
+
+  footer .col{
+    width: 45%;
+    flex: auto;
+    margin-bottom: 20px;
+  }
+
+  footer .row {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+}
+
+@media (max-width: 421px){
+  .blog .col{
+    width: 90%;
+  }
+
+  footer .col{
+    width: 100%;
+    flex: auto;
+  }
+}
